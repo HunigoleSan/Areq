@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/servicios_input.css">
+    <link rel="stylesheet" href="./css/servicios_img.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Areq Estudio</title>
+</head>
+
+<body>
+    <header class="header__container">
+        <img width="197" height="84" class="header_logo" src="./logo/logo-bg-ladrillo.png"
+            alt="logo de la empresa Areq Estudio">
+        <nav class="nav__container">
+            <ul class="nav__menu">
+                <li class="nav__item"><a class="nav__links" href="#servicios">Servicios</a></li>
+                <li class="nav__item"><a class="nav__links" href="#proyectos">Proyectos</a></li>
+                <li class="nav__item"><a class="nav__links" href="#bocetos">Bocetos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="principal">
+        <div class="principal__titulos-and-logo">
+            <img class="principal__logo" src="./logo/logo-bg-ladrillo.png" alt="">
+            <p class="principal__servicio">Saneamiento Fisico Legal de Inmuebles & Proyectos arquitectonicos</p>
+            <!-- <div class="principal__border"></div> -->
+        </div>
+        <div class="principal__video-cita-menu">
+            <video class="principal__video" autoplay muted loop>
+                <source class="source" src="./video/dibujando.mp4" type="video/mp4">
+                <source src="./video/dibujando.ogg" type="video/ogg">
+                Tu Navegador no es compatible con videos HTML5
+            </video>
+            <div class="principal__cita_menu">
+                <div class="principal__cita">
+                    <p class="principal__cita">
+                        Toda forma pictórica se inicia con un punto que se pone en movimiento
+                    </p>
+                    <p class="autor_cita">Paul Klee</p>
+                </div>
+
+                <div class="principal__menu">
+                    <ul class="principal__ul">
+                        <li class="principal__li"><a class="principal__links" href="#servicios">Servicios</a></li>
+                        <li class="principal__li"><a class="principal__links" href="#proyectos">Proyectos</a></li>
+                        <li class="principal__li"><a class="principal__links" href="#bocetos">Bocetos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="servicios">
+
+        <input class="btn__radio" type="radio" name="slider" id="serv-1" checked>
+        <input class="btn__radio" type="radio" name="slider" id="serv-2">
+        <input class="btn__radio" type="radio" name="slider" id="serv-3">
+        <input class="btn__radio" type="radio" name="slider" id="serv-4">
+        <input class="btn__radio" type="radio" name="slider" id="serv-5">
+        <input class="btn__radio" type="radio" name="slider" id="serv-6">
+        <input class="btn__radio" type="radio" name="slider" id="serv-7">
+        <input class="btn__radio" type="radio" name="slider" id="serv-8">
+        <input class="btn__radio" type="radio" name="slider" id="serv-9">
+        <input class="btn__radio" type="radio" name="slider" id="serv-10">
+        <input class="btn__radio" type="radio" name="slider" id="serv-11">
+        <input class="btn__radio" type="radio" name="slider" id="serv-12">
+        <input class="btn__radio" type="radio" name="slider" id="serv-13">
+        <!-- radio button para cerrar iamgenes seleccionados-->
+        <input class="btn__radio" type="radio" name="cerrar" id="busqueda_catastral_cerrar_1">
+        <!-- radio button para mostrar imagenes seleccionadas-->
+        <input class="btn__radio" type="checkbox" name="busqueda" id="busqueda_catastral_1">
+        <input class="btn__radio" type="radio" name="busqueda" id="busqueda_catastral_2">
+        <!-- --------------------------------------------------- -->
+        <div id="busqueda_catastral" class="imagenes_servicios_seleccionadas">
+            <div class="container_imagenes_servicios busqueda_catastral_1">
+                <img class="zoom" src="./img/servicios/busqueda_catastral_1.jpg" alt="">
+                <label for="busqueda_catastral_1" id="cerrar_imagen_servicio"
+                    class="servicio_imagen_cerrar">Cerrar</label>
+            </div>
+        </div>
+        <span id="menu" class="menu">&#8801</span>
+        <div id="servicio_toogle" class="servicios__listas_img">
+            <div class="servicios__lista">
+                <p class="servicios__titulo"> <span>SERV</span>ICIOS</p>
+                <div id="esqueleto_label" class="servicios__ul">
+                    <div class="content_label servicio1">
+                        <label class="servicios__li" id="item-1" for="serv-1">Declaratoria de Fábrica</label>
+                    </div>
+                    <div class="content_label servicio2">
+                        <label class="servicios__li" id="item-2" for="serv-2">Independización / Reglamento
+                            Interno</label>
+                    </div>
+                    <div class="content_label servicio3">
+                        <label class="servicios__li" id="item-3" for="serv-3">Búsqueda Catastral</label>
+                        <div class="descripcion des1">
+                            <p> Inforamcion registradal de SUNARP que permite recopilaras inscripciones, titularidad del
+                                inmueble. Esta representa en la georeferenciacion del preedio para lo salicitud en
+                                registros publicos.</p>
+                        </div>
+                    </div>
+                    <div class="content_label servicio4">
+                        <label class="servicios__li" id="item-4" for="serv-4">Visación - Prescripcion Adquisitiva de
+                            Dominio</label>
+                        <div class="descripcion des1">
+                            <p> Evaluación técnica de ocupa el posesionario del inmueble lo cual se realiza los planos
+                                georeferenciados para la administracion del TUPA municipal</p>
+                        </div>
+                    </div>
+                    <div class="content_label servicio5">
+                        <label class="servicios__li" id="item-5" for="serv-5">Subdivision de Lote</label>
+                        <div class="descripcion des1">
+                            <p>Dado el principio de vivienda inviolable por el codigo civil. el titular podra solicitar
+                                la subdivision de su predio ya se por construccion fisica existente o por ser de terreno
+                                sin construccion. la subdivision procede con el fin de los beneficios de los
+                                administrados, al vender, donar, etc. esta permitida subdividir y declarar de fabrica en
+                                sunarp si los documenntos y los autovalos sustente la antiguiedad del bien.</p>
+                        </div>
+                    </div>
+                    <div class="content_label servicio6">
+                        <label class="servicios__li" id="item-6" for="serv-6">Sucesión Intestada</label>
+                        <div class="descripcion des1">
+                            <p> Establecer los nuevos herederos de un inmueble despues del fallecimiento del titular,
+                                permite inscribir el apto via notarial complementando los documentos de vinculo familiar
+                                y de arbol geonologico</p>
+                        </div>
+                    </div>
+                    <div class="content_label servicio7">
+                        <label class="servicios__li" id="item-7" for="serv-7">Division y Partición /
+                            Copropietarios</label>
+                        <div class="descripcion des1">
+                            <p>Dado la independencia de un inmueble y las nuevas partidas registrales. pueda realizar la
+                                etapa de adjudicacion por la cual es la division y particion la cual permite el acto
+                                legal, definiendo la titularia y la privatixacion del copriputarioales</p>
+                        </div>
+
+                    </div>
+                    <div class="content_label servicio8">
+                        <label class="servicios__li" id="item-8" for="serv-8">Tasación De Inmuebles</label>
+                        <div class="descripcion des1">
+                            <p> Valorizacion comercial de una propiedad por el valor de construcción segun su antiguedad
+                                y valor de terreno.</p>
+                        </div>
+                    </div>
+                    <div class="content_label servicio9">
+                        <label class="servicios__li" id="item-9" for="serv-9">Título Archivado/Antecedente</label>
+                        <div class="descripcion des1">
+                            <p>Lectura del antecedente registral de un inmueble que permita la modificación registral
+                                con lo actual para fines del sanemiento fisico legal de predios urbanos o rurales</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="input" class="servicios_informacion comuns__modifique celular">
+            <div class="box box1">
+                <div id="caja1" class="cajas">
+                    <div id="caja_prueba" class="cajas__card">
+                        <p class="caja__titulo">Declaratoria de Fabrica</p><a class="caja__link ocultar__link"
+                            href="#">Ver mas</a>
+                        <p class="caja__descripción">
+                            Edificacion existente que constata una construccion, ya sea por antiguedad o por
+                            construccion nueva.
+                            Dado la autoconstruccion sin permisos municipales puede ser regularizado en los registros
+                            publicos
+                            construcciones hasta el año 2016 bajos los principiopios de la ley 27157 y la ley 30830. Por
+                            lo que,
+                            las construcciones posteriores al 2016 tiene relacion con el gobierno local por la ley
+                            29090. Por lo
+                            tanto. el acto de declarar la construccion existente permite definir la privatizacion de un
+                            familia
+                            por el uso que tenga respetando la titularidad el bien
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box box2">
+                <div id="caja2" class="cajas">
+                    <div class="cajas__card">
+                        <p class="caja__titulo">Independizacion reglamento interno</p>
+                        <!-- <a class="caja__link" href="#">Ver mas</a> -->
+                        <p class="caja__descripción">
+                            Esta sujeta a la declarar la construccion existente o nuevo y establecer las unidades
+                            inmobilarioa por el uso que tenga, esta permite a delimitira los espacios correspondiente de
+                            los copriopietarios. Po rlo cual esta sujeta a al reglamento interno, estableciendo los
+                            derechos de areas comunos en la cual todo se comprometen a respetar y por supuesto los
+                            derechos como copropietarios en la edificion.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box box3">
+                <div class="cajas">
+                    <p class="box_parrafos titulo">Titulo</p>
+                    <p class="box_parrafos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fuga ea
+                        distinctio, nesciunt asperiores natus. Quis nihil placeat ut maxime adipisci nesciunt eveniet
+                        nam maiores explicabo voluptas ab, nulla earum rem facere, totam obcaecati quia dolores odio
+                        unde alias velit impedit? Recusandae maxime iste sed fuga a! Aliquid maxime officiis ratione
+                        blanditiis obcaecati quam, animi enim et deserunt deleniti nesciunt!</p>
+
+                    <div class="cajas__card">
+                        <div class="cajita">
+                            <p class="caja__titulo">Hoja:AO42833681</p>
+                            <label id="zoom" for="busqueda_catastral_1" class="cajas__card_label"><label>
+                        </div>
+                        <div class="cajita">
+                            <p class="caja__titulo">Hoja:AO42833681</p>
+                            <label for="busqueda_catastral_1" class="cajas__card_label"><label>
+                        </div>
+                        <div class="cajita">
+                            <p class="caja__titulo">Hoja:AO42833681</p>
+                            <label for="busqueda_catastral_1" class="cajas__card_label"><label>
+                        </div>
+                        <div class="cajita">
+                            <p class="caja__titulo">Hoja:AO42833681</p>
+                            <label for="busqueda_catastral_1" class="cajas__card_label"><label>
+                        </div>
+
+                        <div class="cajita">
+                            <p class="caja__titulo">Hoja:AO42833681</p>
+                            <label for="busqueda_catastral_1" class="cajas__card_label"><label>
+                        </div>
+
+                        <!-- <label for="busqueda_catastral_1" class="cajas__card_label"></label>
+                        <label for="busqueda_catastral_1" class="cajas__card_label"></label>
+                        <label for="busqueda_catastral_1" class="cajas__card_label"></label>
+                         -->
+                    </div>
+                </div>
+            </div>
+            <div class="box box4">
+                <div class="cajas">
+                    <div class="cajas__card">
+                        <p class="caja__titulo">Visacion Prescriqsion adquisitiva de Dominio</p><a class="caja__link"
+                            href="#">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box box5">
+                <div class="cajas">
+                    <div class="cajas__card">
+                        <p class="caja__titulo">Subdivison de Lote</p><a class="caja__link" href="#">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box box6">
+                <div class="cajas">
+                    <div class="cajas__card">
+                        <p class="caja__titulo">Sucesión Intestada</p><a class="caja__link" href="#">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box box7">
+                <div class="cajas">
+                    <div class="cajas__card">
+                        <p class="caja__titulo">Division y Partición / Copropietarios</p><a class="caja__link"
+                            href="#">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box box8">
+                <div class="cajas">
+                    <div class="cajas__card">
+                        <p class="caja__titulo">Tasación De Inmuebles</p><a class="caja__link" href="#">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box box9">
+                <div class="cajas">
+                    <div class="cajas__card">
+                        <p class="caja__titulo">Título Archivado/Antecedente</p><a class="caja__link" href="#">Ver
+                            mas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box box10">
+                <div class="cajas">SERVICIO 2</div>
+                <div class="cajas">SERVICIO 2</div>
+                <div class="cajas">SERVICIO 2</div>
+                <div class="cajas">SERVICIO 2</div>
+                <div class="cajas">SERVICIO 2</div>
+                <div class="cajas">SERVICIO 2</div>
+            </div>
+            <!-- <div class="box box11">
+                <div class="cajas">SERVICIO 2</div>
+                <div class="cajas">SERVICIO 2</div>
+                <div class="cajas">SERVICIO 2</div>
+                <div class="cajas">SERVICIO 2</div>
+                <div class="cajas">SERVICIO 2</div>
+                <div class="cajas">SERVICIO 2</div>
+            </div>
+            <div class="box box12">
+                <div class="cajas">SERVICIO 2</div>
+                <div class="cajas">SERVICIO 2</div>
+                <div class="cajas">SERVICIO 2</div>
+                <div class="cajas">SERVICIO 2</div>
+                <div class="cajas">SERVICIO 2</div>
+                <div class="cajas">SERVICIO 2</div>
+            </div>
+            <div class="box box13">
+                <div class="cajas">SERVICIO 2</div>
+                <div class="cajas">SERVICIO 2</div>
+                <div class="cajas">SERVICIO 2</div>
+                <div class="cajas">SERVICIO 2</div>
+                <div class="cajas">SERVICIO 2</div>
+                <div class="cajas">SERVICIO 2</div>
+            </div> -->
+        </div>
+        <div class="servicios__img">
+            <div class="servicios_imagenes">
+                <img class="servicios__imagen imagen_uno" width="350px" height="202px" src="./img/plano.jpg" alt="">
+            </div>
+            <div class="servicios_imagenes">
+                <img class="servicios__imagen imagen_dos" width="350px" height="202px" src="./img/realizado.jpg" alt="">
+            </div>
+            <div class="servicios_imagenes">
+                <img class="servicios__imagen imagen_tres" width="350px" height="202px" src="./img/plano0.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="proyectos__container">
+
+        <div class="proyectos__titulo">
+            <p class="proyectos__parrafo ">PROYECTOS</p>
+            <p class="proyectos__parrafo pt__font-size pt__color">ARQUITECTONICOS
+        </div>
+        <div class="cards__container">
+            <div class="cards__proyectos">
+                <p class="cards__lugar">Villa Maria del Triunfo</p>
+                <div id="villa_maria_del_triunfo" class="cards_fondo_imagen">
+                    <div class="cards_container_imagen">
+                        <img id="villa_maria_antes" class="cards__imagen villaMariaDelTriunfo"
+                            src="./img/proyectos/planoArquitectonico_1_antes.jpg"
+                            alt="proyecto Arquitectonico Villa Maria Del Triunfo">
+                        <img id="villa_maria_ahora" class="cards__imagen s"
+                            src="./img/proyectos/planoArquitectonico_1_despues.jpeg"
+                            alt="proyecto Arquitectonico Villa Maria Del Triunfo">
+                    </div>
+                </div>
+                <div class="cards__informacion">
+                    <p class="cards__fecha">Agosto del 2022</p>
+                    <p class="cards__area">Area 73.00m2</p>
+                    <p class="cards__Antecedente"><span>Antecendete registrarl.</span>Vivienda sin
+                        regularizacion pero con vision al saneamiento fisico legal, en la que el proyecto se
+                        justifica, en buena fe. </p>
+                </div>
+            </div>
+            <div class="cards__proyectos">
+                <p class="cards__lugar">Villa Maria del Triunfo</p>
+                <div id="lugar_2" class="cards_fondo_imagen">
+                    <div class="cards_container_imagen">
+                        <img id="lugar_antes2" class="cards__imagen"
+                            src="./img/proyectos/planoArquitectonico_1_antes.jpg"
+                            alt="proyecto Arquitectonico Villa Maria Del Triungo">
+                        <img id="lugar_ahora2" class="cards__imagen"
+                            src="./img/proyectos/planoArquitectonico_2_despues.jpg"
+                            alt="proyecto Arquitectonico Villa Maria Del Triungo">
+                    </div>
+                </div>
+                <div class="cards__informacion">
+                    <p class="cards__fecha">Agosto del 2022</p>
+                    <p class="cards__area">Area 73.00m2</p>
+                    <p class="cards__Antecedente"><span>Antecendete registrarl.</span>Vivienda sin
+                        regularizacion pero con vision al saneamiento fisico legal, en la que el proyecto se
+                        justifica, en buena fe. </p>
+                </div>
+            </div>
+            <div class="cards__proyectos">
+                <p class="cards__lugar">Villa Maria del Triunfo</p>
+                <div id="lugar_3" class="cards_fondo_imagen">
+                    <div class="cards_container_imagen">
+                        <img id="lugar_antes3" class="cards__imagen" src="./img/proyectos/planoArquitectonico2.jpg"
+                            alt="proyecto Arquitectonico Villa Maria Del Triungo">
+                        <img id="lugar_ahora3" class="cards__imagen" src="./img/proyectos/planoArquitectonico2.jpg"
+                            alt="proyecto Arquitectonico Villa Maria Del Triungo">
+                    </div>
+                </div>
+                <div class="cards__informacion">
+                    <p class="cards__fecha">Agosto del 2022</p>
+                    <p class="cards__area">Area 73.00m2</p>
+                    <p class="cards__Antecedente"><span>Antecendete registrarl.</span>Vivienda sin
+                        regularizacion pero con vision al saneamiento fisico legal, en la que el proyecto se
+                        justifica, en buena fe. </p>
+                </div>
+            </div>
+            <div class="cards__proyectos">
+                <p class="cards__lugar">Villa Maria del Triunfo</p>
+                <div id="lugar_4" class="cards_fondo_imagen">
+                    <div class="cards_container_imagen">
+                        <img id="lugar_antes4" id="villa_maria_antes" class="cards__imagen"
+                            src="./img/proyectos/planoArquitectonico2.jpg"
+                            alt="proyecto Arquitectonico Villa Maria Del Triungo">
+                        <img id="lugar_ahora4" id="villa_maria_ahora" class="cards__imagen"
+                            src="./img/proyectos/planoArquitectonico2.jpg"
+                            alt="proyecto Arquitectonico Villa Maria Del Triungo">
+                    </div>
+                </div>
+                <div class="cards__informacion">
+                    <p class="cards__fecha">Agosto del 2022</p>
+                    <p class="cards__area">Area 73.00m2</p>
+                    <p class="cards__Antecedente"><span>Antecendete registrarl.</span>Vivienda sin
+                        regularizacion pero con vision al saneamiento fisico legal, en la que el proyecto se
+                        justifica, en buena fe. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bocetos" class="bocetos__container">
+        <div class="cube">
+
+            <div class="container_position_cubes">
+                <p class="boceto__titulo">BOCE <span>TOS</span></p>
+                <div class="cube_item">
+                    <div class="front">
+
+                        <img src="img/b_1.png" alt="">
+                    </div>
+                    <div class="back">
+                        <img src="img/b_1.png" alt="">
+                    </div>
+                    <div class="left">
+                        <img src="img/b_1.png" alt="">
+                    </div>
+                    <div class="right">
+                        <img src="img/b_1.png" alt="">
+                    </div>
+                    <div class="top">
+
+                    </div>
+                    <div class="bottom"></div>
+                </div>
+                <div class="cube_item">
+                    <div class="front">
+
+                        <img src="img/b_2.png" alt="">
+
+                    </div>
+                    <div class="back"><img src="img/b_2.png" alt=""></div>
+                    <div class="left"><img src="img/b_2.png" alt=""></div>
+                    <div class="right"><img src="img/b_2.png" alt=""></div>
+                    <div class="top"></div>
+                    <div class="bottom"></div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- <div class="boceto__indicador">
+                <div id="circulo_uno" class="boceto__circulo boceto_uno"></div>
+                <div id="circulo_dos" class="boceto__circulo boceto_dos"></div>
+                <div id="circulo_tres" class="boceto__circulo boceto_tres"></div>
+                <div id="circulo_cuatro" class="boceto__circulo boceto_cuatro"></div>
+                <div id="circulo_cinco" class="boceto__circulo boceto_cinco"></div>
+                <div id="circulo_seis" class="boceto__circulo boceto_seis"></div>
+                <div id="circulo_siete" class="boceto__circulo boceto_siete"></div>
+                <div id="circulo_ocho" class="boceto__circulo boceto_ocho"></div>
+            </div> -->
+
+    </section>
+
+    <footer class="footer">
+        <p class="footer_copy">©2022 AREQ ESTUDIO PERÚ<br>Todos los derechos reservados</p>
+        <p class="footer_copy">Copyright © 2022 | Aviso legal</p>
+    </footer>
+
+    <script src="./script/servicios_nav_mobile.js"></script>
+    <script src="./script/redirecionar.js" type="module"></script>
+    <script src="./script/agrandar_box_servicio.js"></script>
+    <script src="./script/servicios_imagen_show_cerrar.js"></script>
+    <script src="./script/servicio_zoom.js"></script>
+    <script src="./script/proyectos_imagen_show.js"></script>
+    <script>
+        wheelzoom(document.querySelector('img.zoom'));
+    </script>
+</body>
+
+</html>

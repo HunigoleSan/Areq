@@ -1,0 +1,83 @@
+.cajita{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.box3 .cajas__card_label{
+    background: url("../img/servicios/busqueda_catastral_1.jpg");
+    display: block;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    transition: all .5s;
+    border-radius: 10px;
+    position: relative;
+    
+}
+/* falta arerglar, no se expande el label*/
+/* .cajas__card_label:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+} */
+/* 
+.box3 > .cajas:nth-child(2) > .cajas__card{
+    background: url("../img/servicios/busqueda_catastral_2.jpg");
+    width: 210px;
+    background-size: cover;
+}
+.box3 > .cajas:nth-child(3) > .cajas__card{
+    background: url("../img/servicios/busqueda_catastral_3.jpg");
+    width: 210px;
+    background-size: cover;
+}
+.box3 > .cajas:nth-child(4) > .cajas__card{
+    background: url("../img/servicios/busqueda_catastral_4.jpg");
+    width: 210px;
+    background-size: cover;
+}
+.box3 > .cajas:nth-child(5) > .cajas__card{
+    background: url("../img/servicios/busqueda_catastral_5.jpg");
+    width: 210px;
+    background-size: cover;
+}
+.box3 > .cajas:nth-child(6) > .cajas__card{
+    background: url("../img/servicios/busqueda_catastral_6.jpg");
+    width: 210px;
+    background-size: cover;
+}
+.box3 > .cajas:nth-child(7) > .cajas__card{
+    background: url("../img/servicios/busqueda_catastral_7.jpg");
+    width: 210px;
+    background-size: cover;
+}
+.box3 > .cajas:nth-child(8) > .cajas__card{
+    background: url("../img/servicios/busqueda_catastral_8.jpg");
+    width: 210px;
+    background-size: cover;
+}
+.box3 > .cajas:nth-child(9) > .cajas__card{
+    background: url("../img/servicios/busqueda_catastral_9.jpg");
+    width: 210px;
+    background-size: cover;
+}
+.box3 > .cajas:nth-child(10) > .cajas__card{
+    background: url("../img/servicios/busqueda_catastral_10.jpg");
+    width: 210px;
+    background-size: cover;
+}
+ */
+
+
+/* mostrar imagenes en tamaño grande */
+#busqueda_catastral_1:checked ~ #busqueda_catastral{
+    display: block;
+}
+
+/* cerrar imagenes en tamaño grande*/
+#cerrar_imagen_servicio:checked ~ #busqueda_catastral:checked{
+    display:none;
+}

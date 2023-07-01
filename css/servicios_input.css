@@ -1,0 +1,251 @@
+
+
+#serv-1:checked ~ #servicio_toogle #item-1,
+#serv-2:checked ~ #servicio_toogle #item-2,
+#serv-3:checked ~ #servicio_toogle #item-3,
+#serv-4:checked ~ #servicio_toogle #item-4,
+#serv-5:checked ~ #servicio_toogle #item-5,
+#serv-6:checked ~ #servicio_toogle #item-6,
+#serv-7:checked ~ #servicio_toogle #item-7,
+#serv-8:checked ~ #servicio_toogle #item-8,
+#serv-9:checked ~ #servicio_toogle #item-9,
+#serv-10:checked ~ #servicio_toogle #item-10,
+#serv-11:checked ~ #servicio_toogle #item-11,
+#serv-12:checked ~ #servicio_toogle #item-12,
+#serv-13:checked ~ #servicio_toogle #item-13{
+    background: var(--plomo-1);
+    color: var(--text-black);
+}
+
+
+/* #serv-1:checked ~ #input .box1,
+#serv-2:checked ~ #input .box2,
+#serv-3:checked ~ #input .box3,
+#serv-4:checked ~ #input .box4,
+#serv-5:checked ~ #input .box5,
+#serv-6:checked ~ #input .box6,
+#serv-7:checked ~ #input .box7,
+#serv-8:checked ~ #input .box8,
+#serv-9:checked ~ #input .box9,
+#serv-10:checked ~ #input .box10,
+#serv-11:checked ~ #input .box11,
+#serv-12:checked ~ #input .box12,
+#serv-13:checked ~ #input .box13{
+    background: green;
+} */
+/* ocultar */
+#serv-1:checked ~ #input .box2,
+#serv-1:checked ~ #input .box3,
+#serv-1:checked ~ #input .box4,
+#serv-1:checked ~ #input .box5,
+#serv-1:checked ~ #input .box6,
+#serv-1:checked ~ #input .box7,
+#serv-1:checked ~ #input .box8,
+#serv-1:checked ~ #input .box9,
+#serv-1:checked ~ #input .box10,
+#serv-1:checked ~ #input .box11,
+#serv-1:checked ~ #input .box12,
+#serv-1:checked ~ #input .box13{
+    display: none;
+}
+#serv-2:checked ~ #input .box1,
+#serv-2:checked ~ #input .box3,
+#serv-2:checked ~ #input .box4,
+#serv-2:checked ~ #input .box5,
+#serv-2:checked ~ #input .box6,
+#serv-2:checked ~ #input .box7,
+#serv-2:checked ~ #input .box8,
+#serv-2:checked ~ #input .box9,
+#serv-2:checked ~ #input .box10,
+#serv-2:checked ~ #input .box11,
+#serv-2:checked ~ #input .box12,
+#serv-2:checked ~ #input .box13{
+    display: none;
+}
+#serv-3:checked ~ #input .box2,
+#serv-3:checked ~ #input .box1,
+#serv-3:checked ~ #input .box4,
+#serv-3:checked ~ #input .box5,
+#serv-3:checked ~ #input .box6,
+#serv-3:checked ~ #input .box7,
+#serv-3:checked ~ #input .box8,
+#serv-3:checked ~ #input .box9,
+#serv-3:checked ~ #input .box10,
+#serv-3:checked ~ #input .box11,
+#serv-3:checked ~ #input .box12,
+#serv-3:checked ~ #input .box13{
+    display: none;
+}
+#serv-4:checked ~ #input .box2,
+#serv-4:checked ~ #input .box3,
+#serv-4:checked ~ #input .box1,
+#serv-4:checked ~ #input .box5,
+#serv-4:checked ~ #input .box6,
+#serv-4:checked ~ #input .box7,
+#serv-4:checked ~ #input .box8,
+#serv-4:checked ~ #input .box9,
+#serv-4:checked ~ #input .box10,
+#serv-4:checked ~ #input .box11,
+#serv-4:checked ~ #input .box12,
+#serv-4:checked ~ #input .box13{
+    display: none;
+}
+#serv-5:checked ~ #input .box2,
+#serv-5:checked ~ #input .box3,
+#serv-5:checked ~ #input .box4,
+#serv-5:checked ~ #input .box1,
+#serv-5:checked ~ #input .box6,
+#serv-5:checked ~ #input .box7,
+#serv-5:checked ~ #input .box8,
+#serv-5:checked ~ #input .box9,
+#serv-5:checked ~ #input .box10,
+#serv-5:checked ~ #input .box11,
+#serv-5:checked ~ #input .box12,
+#serv-5:checked ~ #input .box13{
+    display: none;
+}
+#serv-6:checked ~ #input .box2,
+#serv-6:checked ~ #input .box3,
+#serv-6:checked ~ #input .box4,
+#serv-6:checked ~ #input .box5,
+#serv-6:checked ~ #input .box1,
+#serv-6:checked ~ #input .box7,
+#serv-6:checked ~ #input .box8,
+#serv-6:checked ~ #input .box9,
+#serv-6:checked ~ #input .box10,
+#serv-6:checked ~ #input .box11,
+#serv-6:checked ~ #input .box12,
+#serv-6:checked ~ #input .box13{
+    display: none;
+}
+#serv-7:checked ~ #input .box2,
+#serv-7:checked ~ #input .box3,
+#serv-7:checked ~ #input .box4,
+#serv-7:checked ~ #input .box5,
+#serv-7:checked ~ #input .box6,
+#serv-7:checked ~ #input .box1,
+#serv-7:checked ~ #input .box8,
+#serv-7:checked ~ #input .box9,
+#serv-7:checked ~ #input .box10,
+#serv-7:checked ~ #input .box11,
+#serv-7:checked ~ #input .box12,
+#serv-7:checked ~ #input .box13{
+    display: none;
+}
+#serv-8:checked ~ #input .box2,
+#serv-8:checked ~ #input .box3,
+#serv-8:checked ~ #input .box4,
+#serv-8:checked ~ #input .box5,
+#serv-8:checked ~ #input .box6,
+#serv-8:checked ~ #input .box7,
+#serv-8:checked ~ #input .box1,
+#serv-8:checked ~ #input .box9,
+#serv-8:checked ~ #input .box10,
+#serv-8:checked ~ #input .box11,
+#serv-8:checked ~ #input .box12,
+#serv-8:checked ~ #input .box13{
+    display: none;
+}
+#serv-9:checked ~ #input .box2,
+#serv-9:checked ~ #input .box3,
+#serv-9:checked ~ #input .box4,
+#serv-9:checked ~ #input .box5,
+#serv-9:checked ~ #input .box6,
+#serv-9:checked ~ #input .box7,
+#serv-9:checked ~ #input .box8,
+#serv-9:checked ~ #input .box1,
+#serv-9:checked ~ #input .box10,
+#serv-9:checked ~ #input .box11,
+#serv-9:checked ~ #input .box12,
+#serv-9:checked ~ #input .box13{
+    display: none;
+}
+#serv-10:checked ~ #input .box2,
+#serv-10:checked ~ #input .box3,
+#serv-10:checked ~ #input .box4,
+#serv-10:checked ~ #input .box5,
+#serv-10:checked ~ #input .box6,
+#serv-10:checked ~ #input .box7,
+#serv-10:checked ~ #input .box8,
+#serv-10:checked ~ #input .box9,
+#serv-10:checked ~ #input .box1,
+#serv-10:checked ~ #input .box11,
+#serv-10:checked ~ #input .box12,
+#serv-10:checked ~ #input .box13{
+    display: none;
+}
+#serv-11:checked ~ #input .box2,
+#serv-11:checked ~ #input .box3,
+#serv-11:checked ~ #input .box4,
+#serv-11:checked ~ #input .box5,
+#serv-11:checked ~ #input .box6,
+#serv-11:checked ~ #input .box7,
+#serv-11:checked ~ #input .box8,
+#serv-11:checked ~ #input .box9,
+#serv-11:checked ~ #input .box10,
+#serv-11:checked ~ #input .box1,
+#serv-11:checked ~ #input .box12,
+#serv-11:checked ~ #input .box13{
+    display: none;
+}
+#serv-12:checked ~ #input .box2,
+#serv-12:checked ~ #input .box3,
+#serv-12:checked ~ #input .box4,
+#serv-12:checked ~ #input .box5,
+#serv-12:checked ~ #input .box6,
+#serv-12:checked ~ #input .box7,
+#serv-12:checked ~ #input .box8,
+#serv-12:checked ~ #input .box9,
+#serv-12:checked ~ #input .box10,
+#serv-12:checked ~ #input .box11,
+#serv-12:checked ~ #input .box1,
+#serv-12:checked ~ #input .box13{
+    display: none;
+}
+#serv-13:checked ~ #input .box2,
+#serv-13:checked ~ #input .box3,
+#serv-13:checked ~ #input .box4,
+#serv-13:checked ~ #input .box5,
+#serv-13:checked ~ #input .box6,
+#serv-13:checked ~ #input .box7,
+#serv-13:checked ~ #input .box8,
+#serv-13:checked ~ #input .box9,
+#serv-13:checked ~ #input .box10,
+#serv-13:checked ~ #input .box11,
+#serv-13:checked ~ #input .box12,
+#serv-13:checked ~ #input .box1{
+    display: none;
+}
+
+/* MOSTRAR DESCRIPCION */
+#serv-1:checked ~ #servicio_toogle .servicio1 .descripcion,
+#serv-2:checked ~ #servicio_toogle .servicio2 .descripcion,
+#serv-3:checked ~ #servicio_toogle .servicio3 .descripcion,
+#serv-4:checked ~ #servicio_toogle .servicio4 .descripcion,
+#serv-5:checked ~ #servicio_toogle .servicio5 .descripcion,
+#serv-6:checked ~ #servicio_toogle .servicio6 .descripcion,
+#serv-7:checked ~ #servicio_toogle .servicio7 .descripcion,
+#serv-8:checked ~ #servicio_toogle .servicio8 .descripcion,
+#serv-9:checked ~ #servicio_toogle .servicio9 .descripcion,
+#serv-10:checked ~ #servicio_toogle .servicio10 .descripcion{
+    display: block;
+    background: var(--plomo-1);
+    color: var(--text-black);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
