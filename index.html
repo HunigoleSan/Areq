@@ -77,20 +77,10 @@
         <input class="btn__radio" type="radio" name="slider" id="serv-11">
         <input class="btn__radio" type="radio" name="slider" id="serv-12">
         <input class="btn__radio" type="radio" name="slider" id="serv-13">
-        <!-- radio button para cerrar iamgenes seleccionados-->
-        <input class="btn__radio" type="radio" name="cerrar" id="busqueda_catastral_cerrar_1">
-        <!-- radio button para mostrar imagenes seleccionadas-->
-        <input class="btn__radio" type="checkbox" name="busqueda" id="busqueda_catastral_1">
-        <input class="btn__radio" type="radio" name="busqueda" id="busqueda_catastral_2">
-        <!-- --------------------------------------------------- -->
-        <div id="busqueda_catastral" class="imagenes_servicios_seleccionadas">
-            <div class="container_imagenes_servicios busqueda_catastral_1">
-                <img class="zoom" src="./img/servicios/busqueda_catastral_1.jpg" alt="">
-                <label for="busqueda_catastral_1" id="cerrar_imagen_servicio"
-                    class="servicio_imagen_cerrar">Cerrar</label>
-            </div>
-        </div>
-        <span id="menu" class="menu">&#8801</span>
+        <!-- radio button para cerrar -->
+        <input class="btn__radio" type="radio" name="slider" id="cerrar">
+        <!-- abrir #input cuando se pase a celular -->    
+        <!-- <span id="menu" class="menu">&#8801</span> -->
         <div id="servicio_toogle" class="servicios__listas_img">
             <div class="servicios__lista">
                 <p class="servicios__titulo"> <span>SERV</span>ICIOS</p>
@@ -104,66 +94,32 @@
                     </div>
                     <div class="content_label servicio3">
                         <label class="servicios__li" id="item-3" for="serv-3">Búsqueda Catastral</label>
-                        <div class="descripcion des1">
-                            <p> Inforamcion registradal de SUNARP que permite recopilaras inscripciones, titularidad del
-                                inmueble. Esta representa en la georeferenciacion del preedio para lo salicitud en
-                                registros publicos.</p>
-                        </div>
                     </div>
                     <div class="content_label servicio4">
                         <label class="servicios__li" id="item-4" for="serv-4">Visación - Prescripcion Adquisitiva de
                             Dominio</label>
-                        <div class="descripcion des1">
-                            <p> Evaluación técnica de ocupa el posesionario del inmueble lo cual se realiza los planos
-                                georeferenciados para la administracion del TUPA municipal</p>
-                        </div>
                     </div>
                     <div class="content_label servicio5">
                         <label class="servicios__li" id="item-5" for="serv-5">Subdivision de Lote</label>
-                        <div class="descripcion des1">
-                            <p>Dado el principio de vivienda inviolable por el codigo civil. el titular podra solicitar
-                                la subdivision de su predio ya se por construccion fisica existente o por ser de terreno
-                                sin construccion. la subdivision procede con el fin de los beneficios de los
-                                administrados, al vender, donar, etc. esta permitida subdividir y declarar de fabrica en
-                                sunarp si los documenntos y los autovalos sustente la antiguiedad del bien.</p>
-                        </div>
                     </div>
                     <div class="content_label servicio6">
                         <label class="servicios__li" id="item-6" for="serv-6">Sucesión Intestada</label>
-                        <div class="descripcion des1">
-                            <p> Establecer los nuevos herederos de un inmueble despues del fallecimiento del titular,
-                                permite inscribir el apto via notarial complementando los documentos de vinculo familiar
-                                y de arbol geonologico</p>
-                        </div>
                     </div>
                     <div class="content_label servicio7">
                         <label class="servicios__li" id="item-7" for="serv-7">Division y Partición /
                             Copropietarios</label>
-                        <div class="descripcion des1">
-                            <p>Dado la independencia de un inmueble y las nuevas partidas registrales. pueda realizar la
-                                etapa de adjudicacion por la cual es la division y particion la cual permite el acto
-                                legal, definiendo la titularia y la privatixacion del copriputarioales</p>
-                        </div>
-
                     </div>
                     <div class="content_label servicio8">
                         <label class="servicios__li" id="item-8" for="serv-8">Tasación De Inmuebles</label>
-                        <div class="descripcion des1">
-                            <p> Valorizacion comercial de una propiedad por el valor de construcción segun su antiguedad
-                                y valor de terreno.</p>
-                        </div>
                     </div>
                     <div class="content_label servicio9">
                         <label class="servicios__li" id="item-9" for="serv-9">Título Archivado/Antecedente</label>
-                        <div class="descripcion des1">
-                            <p>Lectura del antecedente registral de un inmueble que permita la modificación registral
-                                con lo actual para fines del sanemiento fisico legal de predios urbanos o rurales</p>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div id="input" class="servicios_informacion comuns__modifique celular">
+            <label id="cerrar"  for="cerrar" class="cerrar_input">Cerrar</label>
             <div class="box box1">
                 <div id="caja1" class="cajas">
                     <div id="caja_prueba" class="cajas__card">
@@ -189,7 +145,7 @@
                 <div id="caja2" class="cajas">
                     <div class="cajas__card">
                         <p class="caja__titulo">Independizacion reglamento interno</p>
-                        <!-- <a class="caja__link" href="#">Ver mas</a> -->
+                        
                         <p class="caja__descripción">
                             Esta sujeta a la declarar la construccion existente o nuevo y establecer las unidades
                             inmobilarioa por el uso que tenga, esta permite a delimitira los espacios correspondiente de
@@ -201,86 +157,95 @@
                 </div>
             </div>
             <div class="box box3">
-                <div class="cajas">
-                    <p class="box_parrafos titulo">Titulo</p>
-                    <p class="box_parrafos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fuga ea
-                        distinctio, nesciunt asperiores natus. Quis nihil placeat ut maxime adipisci nesciunt eveniet
-                        nam maiores explicabo voluptas ab, nulla earum rem facere, totam obcaecati quia dolores odio
-                        unde alias velit impedit? Recusandae maxime iste sed fuga a! Aliquid maxime officiis ratione
-                        blanditiis obcaecati quam, animi enim et deserunt deleniti nesciunt!</p>
-
+                <div id="caja3" class="cajas">
                     <div class="cajas__card">
-                        <div class="cajita">
-                            <p class="caja__titulo">Hoja:AO42833681</p>
-                            <label id="zoom" for="busqueda_catastral_1" class="cajas__card_label"><label>
-                        </div>
-                        <div class="cajita">
-                            <p class="caja__titulo">Hoja:AO42833681</p>
-                            <label for="busqueda_catastral_1" class="cajas__card_label"><label>
-                        </div>
-                        <div class="cajita">
-                            <p class="caja__titulo">Hoja:AO42833681</p>
-                            <label for="busqueda_catastral_1" class="cajas__card_label"><label>
-                        </div>
-                        <div class="cajita">
-                            <p class="caja__titulo">Hoja:AO42833681</p>
-                            <label for="busqueda_catastral_1" class="cajas__card_label"><label>
-                        </div>
-
-                        <div class="cajita">
-                            <p class="caja__titulo">Hoja:AO42833681</p>
-                            <label for="busqueda_catastral_1" class="cajas__card_label"><label>
-                        </div>
-
-                        <!-- <label for="busqueda_catastral_1" class="cajas__card_label"></label>
-                        <label for="busqueda_catastral_1" class="cajas__card_label"></label>
-                        <label for="busqueda_catastral_1" class="cajas__card_label"></label>
-                         -->
+                        <p class="caja__titulo">Búsqueda Catastral</p>
+                        
+                        <p class="caja__descripción">
+                            Inforamcion registradal de SUNARP que permite recopilaras
+                            inscripciones, titularidad del inmueble. Esta representa
+                            en la georeferenciacion del preedio para lo salicitud en
+                            registros publicos.
+                        </p>
                     </div>
                 </div>
+
             </div>
             <div class="box box4">
                 <div class="cajas">
                     <div class="cajas__card">
-                        <p class="caja__titulo">Visacion Prescriqsion adquisitiva de Dominio</p><a class="caja__link"
-                            href="#">Ver mas</a>
+                        <p class="caja__titulo">Visacion Prescriqsion adquisitiva de Dominio</p>
+                        <p class="caja__descripción">
+                            Evaluación técnica de ocupa el posesionario del
+                            inmueble lo cual se realiza los planos
+                            georeferenciados para la administracion del TUPA
+                            municipal
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="box box5">
                 <div class="cajas">
                     <div class="cajas__card">
-                        <p class="caja__titulo">Subdivison de Lote</p><a class="caja__link" href="#">Ver mas</a>
+                        <p class="caja__titulo">Subdivison de Lote</p>
+                        <p class="caja__descripción">
+                            Dado el principio de vivienda inviolable por el codigo 
+                            civil. el titular podra solicitar la subdivision de su 
+                            predio ya se por construccion fisica existente o por ser 
+                            de terreno sin construccion. la subdivision procede con 
+                            el fin de los beneficios de los administrados, al vender, 
+                            donar, etc. esta permitida subdividir y declarar de fabrica 
+                            en sunarp si los documenntos y los autovalos sustente la 
+                            antiguiedad del bien.
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="box box6">
                 <div class="cajas">
                     <div class="cajas__card">
-                        <p class="caja__titulo">Sucesión Intestada</p><a class="caja__link" href="#">Ver mas</a>
+                        <p class="caja__titulo">Sucesión Intestada</p>
+                        <p class="caja__descripción">
+                            Establecer los nuevos herederos de un inmueble despues del fallecimiento 
+                            del titular, permite inscribir el apto via notarial complementando los documentos de vinculo familiar y de arbol geonologico
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="box box7">
                 <div class="cajas">
                     <div class="cajas__card">
-                        <p class="caja__titulo">Division y Partición / Copropietarios</p><a class="caja__link"
-                            href="#">Ver mas</a>
+                        <p class="caja__titulo">Division y Partición / Copropietarios</p>
+                        <p class="caja__descripción">
+                            Establecer los nuevos herederos de un inmueble despues del 
+                            fallecimiento del titular, permite inscribir el apto via 
+                            notarial complementando los documentos de vinculo familiar 
+                            y de arbol geonologico.
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="box box8">
                 <div class="cajas">
                     <div class="cajas__card">
-                        <p class="caja__titulo">Tasación De Inmuebles</p><a class="caja__link" href="#">Ver mas</a>
+                        <p class="caja__titulo">Tasación De Inmuebles</p>
+                        <p class="caja__descripción">
+                            Valorizacion comercial de una propiedad por el valor de 
+                            construcción segun su antiguedad y valor de terreno.
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="box box9">
                 <div class="cajas">
                     <div class="cajas__card">
-                        <p class="caja__titulo">Título Archivado/Antecedente</p><a class="caja__link" href="#">Ver
-                            mas</a>
+                        <p class="caja__titulo">Título Archivado / Antecedente</p>
+                        <p class="caja__descripción">
+                            Lectura del antecedente registral de un inmueble que 
+                            permita la modificación registral con lo actual para 
+                            fines del sanemiento fisico legal de predios urbanos 
+                            o rurales.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -292,30 +257,6 @@
                 <div class="cajas">SERVICIO 2</div>
                 <div class="cajas">SERVICIO 2</div>
             </div>
-            <!-- <div class="box box11">
-                <div class="cajas">SERVICIO 2</div>
-                <div class="cajas">SERVICIO 2</div>
-                <div class="cajas">SERVICIO 2</div>
-                <div class="cajas">SERVICIO 2</div>
-                <div class="cajas">SERVICIO 2</div>
-                <div class="cajas">SERVICIO 2</div>
-            </div>
-            <div class="box box12">
-                <div class="cajas">SERVICIO 2</div>
-                <div class="cajas">SERVICIO 2</div>
-                <div class="cajas">SERVICIO 2</div>
-                <div class="cajas">SERVICIO 2</div>
-                <div class="cajas">SERVICIO 2</div>
-                <div class="cajas">SERVICIO 2</div>
-            </div>
-            <div class="box box13">
-                <div class="cajas">SERVICIO 2</div>
-                <div class="cajas">SERVICIO 2</div>
-                <div class="cajas">SERVICIO 2</div>
-                <div class="cajas">SERVICIO 2</div>
-                <div class="cajas">SERVICIO 2</div>
-                <div class="cajas">SERVICIO 2</div>
-            </div> -->
         </div>
         <div class="servicios__img">
             <div class="servicios_imagenes">
@@ -484,9 +425,10 @@
     <script src="./script/servicios_imagen_show_cerrar.js"></script>
     <script src="./script/servicio_zoom.js"></script>
     <script src="./script/proyectos_imagen_show.js"></script> -->
-    <script>
+    <!-- <script>
         wheelzoom(document.querySelector('img.zoom'));
-    </script>
+    </script> -->
+    <script src="js/offRadioButton.js"></script>
 </body>
 
 </html>

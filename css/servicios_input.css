@@ -17,22 +17,6 @@
     color: var(--text-black);
 }
 
-
-/* #serv-1:checked ~ #input .box1,
-#serv-2:checked ~ #input .box2,
-#serv-3:checked ~ #input .box3,
-#serv-4:checked ~ #input .box4,
-#serv-5:checked ~ #input .box5,
-#serv-6:checked ~ #input .box6,
-#serv-7:checked ~ #input .box7,
-#serv-8:checked ~ #input .box8,
-#serv-9:checked ~ #input .box9,
-#serv-10:checked ~ #input .box10,
-#serv-11:checked ~ #input .box11,
-#serv-12:checked ~ #input .box12,
-#serv-13:checked ~ #input .box13{
-    background: green;
-} */
 /* ocultar */
 #serv-1:checked ~ #input .box2,
 #serv-1:checked ~ #input .box3,
@@ -46,8 +30,10 @@
 #serv-1:checked ~ #input .box11,
 #serv-1:checked ~ #input .box12,
 #serv-1:checked ~ #input .box13{
+    animation: show_input 2s linear forwards;
     display: none;
 }
+
 #serv-2:checked ~ #input .box1,
 #serv-2:checked ~ #input .box3,
 #serv-2:checked ~ #input .box4,
@@ -60,6 +46,7 @@
 #serv-2:checked ~ #input .box11,
 #serv-2:checked ~ #input .box12,
 #serv-2:checked ~ #input .box13{
+    
     display: none;
 }
 #serv-3:checked ~ #input .box2,
@@ -74,6 +61,7 @@
 #serv-3:checked ~ #input .box11,
 #serv-3:checked ~ #input .box12,
 #serv-3:checked ~ #input .box13{
+    
     display: none;
 }
 #serv-4:checked ~ #input .box2,
@@ -88,6 +76,7 @@
 #serv-4:checked ~ #input .box11,
 #serv-4:checked ~ #input .box12,
 #serv-4:checked ~ #input .box13{
+    
     display: none;
 }
 #serv-5:checked ~ #input .box2,
@@ -102,6 +91,7 @@
 #serv-5:checked ~ #input .box11,
 #serv-5:checked ~ #input .box12,
 #serv-5:checked ~ #input .box13{
+    
     display: none;
 }
 #serv-6:checked ~ #input .box2,
@@ -116,6 +106,7 @@
 #serv-6:checked ~ #input .box11,
 #serv-6:checked ~ #input .box12,
 #serv-6:checked ~ #input .box13{
+    
     display: none;
 }
 #serv-7:checked ~ #input .box2,
@@ -130,6 +121,7 @@
 #serv-7:checked ~ #input .box11,
 #serv-7:checked ~ #input .box12,
 #serv-7:checked ~ #input .box13{
+    
     display: none;
 }
 #serv-8:checked ~ #input .box2,
@@ -144,6 +136,7 @@
 #serv-8:checked ~ #input .box11,
 #serv-8:checked ~ #input .box12,
 #serv-8:checked ~ #input .box13{
+    
     display: none;
 }
 #serv-9:checked ~ #input .box2,
@@ -158,6 +151,7 @@
 #serv-9:checked ~ #input .box11,
 #serv-9:checked ~ #input .box12,
 #serv-9:checked ~ #input .box13{
+    
     display: none;
 }
 #serv-10:checked ~ #input .box2,
@@ -172,6 +166,7 @@
 #serv-10:checked ~ #input .box11,
 #serv-10:checked ~ #input .box12,
 #serv-10:checked ~ #input .box13{
+    
     display: none;
 }
 #serv-11:checked ~ #input .box2,
@@ -186,6 +181,7 @@
 #serv-11:checked ~ #input .box1,
 #serv-11:checked ~ #input .box12,
 #serv-11:checked ~ #input .box13{
+    
     display: none;
 }
 #serv-12:checked ~ #input .box2,
@@ -200,6 +196,7 @@
 #serv-12:checked ~ #input .box11,
 #serv-12:checked ~ #input .box1,
 #serv-12:checked ~ #input .box13{
+    
     display: none;
 }
 #serv-13:checked ~ #input .box2,
@@ -214,11 +211,83 @@
 #serv-13:checked ~ #input .box11,
 #serv-13:checked ~ #input .box12,
 #serv-13:checked ~ #input .box1{
+    
     display: none;
 }
-
+@media screen and (max-width:1050px) {
+    
+    .servicios{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .celular{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 390px;
+        z-index: 20;
+        /* opacity: 1; */
+        height: 800px;
+        backdrop-filter: blur(20px);
+        
+        
+    }
+    
+    .box{
+        width: 100%;
+        height: 100%;
+        padding: 2rem 2em 2rem 2rem;
+    }
+    .cerrar_input{
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: 3.6rem;
+        display: flex;
+        padding: .5rem 3rem;
+        border-radius: 10px;
+        background: rgb(74, 131, 254);
+        width: 50px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+    }
+    .servicios_informacion{
+        flex-direction: column;
+    }
+    .input-mobile-cerrado{
+        display: none;
+    }
+    /* #serv-1:checked ~ #input{
+        display: none;
+    }
+ */
+    #input{
+        display: block;
+        animation: shows_input .5s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+    }
+    
+    @keyframes shows_input {
+        to{
+            top: 50%;
+            left: 50%;
+            opacity: 1;
+            
+        }
+        from{
+            left: 75%;
+            opacity: 0;
+        }
+    }
+    
+}
 /* MOSTRAR DESCRIPCION */
-#serv-1:checked ~ #servicio_toogle .servicio1 .descripcion,
+/* #serv-1:checked ~ #servicio_toogle .servicio1 .descripcion,
 #serv-2:checked ~ #servicio_toogle .servicio2 .descripcion,
 #serv-3:checked ~ #servicio_toogle .servicio3 .descripcion,
 #serv-4:checked ~ #servicio_toogle .servicio4 .descripcion,
@@ -232,6 +301,9 @@
     background: var(--plomo-1);
     color: var(--text-black);
 
+} */
+#cerrar:checked ~ #input{
+    display: none;
 }
 
 
