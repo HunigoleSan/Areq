@@ -1575,7 +1575,7 @@ img {
     .header__container {
         /* background-color: var(--bg__principal_container); */
         position: fixed;
-        z-index: 20;
+        z-index: 60;
         display: flex;
         justify-content: space-around;
         align-items: center;
