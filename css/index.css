@@ -75,6 +75,7 @@ img {
     position: relative;
     display: none;
     border-bottom: 1px solid var(--ladrillo-semi-dark);
+    z-index: 70;
     
 }
 
@@ -1575,7 +1576,7 @@ img {
     .header__container {
        
         position: fixed;
-        z-index: 70;
+        /* z-index: 70; */
         display: flex;
         justify-content: space-around;
         align-items: center;
