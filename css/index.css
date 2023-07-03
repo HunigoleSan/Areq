@@ -1573,14 +1573,14 @@ img {
 @media screen and (max-width: 1350px) {
 
     .header__container {
-        /* background-color: var(--bg__principal_container); */
+       
         position: fixed;
-        z-index: 60;
+        z-index: 70;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        
-        /* padding-bottom: 30px; */
+        /* background: red; */
+       
         
     }
     .autor_cita{
