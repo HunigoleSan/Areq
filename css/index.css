@@ -1726,22 +1726,24 @@ img {
         display: block;
     }
     .principal__servicio {
-        margin-top: 4.5rem;
+        margin-top: 0rem;
     }
     .bocetos__container {
         padding-top: 12rem;
     }
     .principal {
-        justify-content: center;
+        justify-content: start;
         gap: 1rem;
-        padding-top: 5rem;
+        
+    }
+    .principal__titulos-and-logo{
+        margin-top: 9rem;
     }
 }
 
 @media screen and (max-width:375px) {
     .principal__servicio {
         font-size: 2.7rem;
-        margin-top: 9rem;
     }
     .servicios__ul {
         width: inherit;
