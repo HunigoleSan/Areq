@@ -1734,6 +1734,7 @@ img {
     .principal {
         justify-content: center;
         gap: 1rem;
+        padding-top: 5rem;
     }
 }
 
