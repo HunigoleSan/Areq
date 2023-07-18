@@ -20,18 +20,26 @@
 
 <body>
     <header class="header__container">
-        <img width="197" height="84" class="header_logo" src="./logo/logo-bg-ladrillo.png"
+        <a href="#menu_principal">
+            <img width="197" height="84" class="header_logo" src="./logo/logo-bg-ladrillo.png"
             alt="logo de la empresa Areq Estudio">
-        <nav class="nav__container">
-            <ul class="nav__menu">
-                <li class="nav__item"><a class="nav__links" href="#servicios">Servicios</a></li>
-                <li class="nav__item"><a class="nav__links" href="#proyectos">Proyectos</a></li>
-                <li class="nav__item"><a class="nav__links" href="#bocetos">Bocetos</a></li>
-            </ul>
-        </nav>
+        </a>
+            <nav class="nav__container">
+                <ul class="nav__menu">
+                    <li class="nav__item"><a class="nav__links" href="#servicios">Servicios</a></li>
+                    <li class="nav__item"><a class="nav__links" href="#proyectos">Proyectos</a></li>
+                    <li class="nav__item"><a class="nav__links" href="#bocetos">Bocetos</a></li>
+                </ul>
+            </nav>
     </header>
-
-    <section class="principal">
+    <nav class="nav__container_mobile">
+        <ul class="nav__menu">
+            <li class="nav__item"><a class="nav__links" href="#servicios">Servicios</a></li>
+            <li class="nav__item"><a class="nav__links" href="#proyectos">Proyectos</a></li>
+            <li class="nav__item"><a class="nav__links" href="#bocetos">Bocetos</a></li>
+        </ul>
+    </nav>
+    <section id="menu_principal" class="principal">
         <div class="principal__titulos-and-logo">
             <img class="principal__logo" src="./logo/logo-bg-ladrillo.png" alt="">
             <p class="principal__servicio">Saneamiento Fisico Legal de Inmuebles & Proyectos arquitectonicos</p>
@@ -60,6 +68,11 @@
                 </div>
             </div>
         </div>
+        <video class="principal__video principal__video__mobile" autoplay muted loop>
+            <source class="source" src="./video/dibujando.mp4" type="video/mp4">
+            <source src="./video/dibujando.ogg" type="video/ogg">
+            Tu Navegador no es compatible con videos HTML5
+        </video>
     </section>
 
     <section id="servicios" class="servicios">
@@ -78,7 +91,7 @@
         <input class="btn__radio" type="radio" name="slider" id="serv-12">
         <input class="btn__radio" type="radio" name="slider" id="serv-13">
         <!-- radio button para cerrar -->
-        <input class="btn__radio" type="radio" name="slider" id="cerrar">
+        <!-- <input class="btn__radio" type="radio" name="slider" id="cerrar"> -->
         <!-- abrir #input cuando se pase a celular -->    
         <!-- <span id="menu" class="menu">&#8801</span> -->
         <div id="servicio_toogle" class="servicios__listas_img">
@@ -119,7 +132,7 @@
             </div>
         </div>
         <div id="input" class="servicios_informacion comuns__modifique celular">
-            <label id="cerrar"  for="cerrar" class="cerrar_input">Cerrar</label>
+            <div id="cerrar" class="cerrar_input">Cerrar</div>
             <div class="box box1">
                 <div id="caja1" class="cajas">
                     <div id="caja_prueba" class="cajas__card">
@@ -361,9 +374,9 @@
 
     <section id="bocetos" class="bocetos__container">
         <div class="cube">
-
+            <p class="boceto__titulo">BOCE <span>TOS</span></p>
             <div class="container_position_cubes">
-                <p class="boceto__titulo">BOCE <span>TOS</span></p>
+                
                 <div class="cube_item">
                     <div class="front">
 
@@ -383,7 +396,7 @@
                     </div>
                     <div class="bottom"></div>
                 </div>
-                <div class="cube_item">
+                <div class="cube_item cube_item_animacion_inverso">
                     <div class="front">
 
                         <img src="img/b_2.png" alt="">

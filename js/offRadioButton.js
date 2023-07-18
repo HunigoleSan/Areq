@@ -1,62 +1,71 @@
-/* const radioButtonHtml = document.querySelectorAll('input[type="radio"]');
-const inputHtml = document.getElementById('input'); */
-/* 
-inputHtml.classList.add('input-mobile-cerrado')
-inputHtml.classList.remove('input-mobile-cerrado') */
-// Obtener los elementos del DOM
-const radios = document.querySelectorAll('input[type="radio"]');
-const input = document.getElementById('input');
-const cerrarRadio = document.getElementById('cerrar');
-let selectedRadioIndex = 0;
-
-// Función para manejar el cambio de tamaño de la ventana
-
-function handleResize() {
-    if (window.innerWidth < 1051) {
-        radios.forEach((radio) => {
-            radio.checked = false;
-        });
-        input.style.display = 'none';
-        cerrarRadio.checked = false; // Desmarcar el botón "Cerrar"
-        
-    } else {
-        radios[selectedRadioIndex].checked = true;
-        input.style.display = 'block';
-        
-    }
-}
-
-// Función para manejar el clic en los radios
-function handleRadioChange(event) {
-    selectedRadioIndex = Array.from(radios).findIndex((radio) => radio === event.target);
-    console.log(selectedRadioIndex)
-    if (window.innerWidth <= 1050) {
-        input.style.display = 'block';
-        cerrarRadio.checked = false; // Desmarcar el botón "Cerrar" al seleccionar un radio
-    }
-}
-
-// Función para manejar el clic en el botón "Cerrar"
-function handleCerrarClick() {
-    radios.forEach((radio) => {
-        radio.checked = false;
-    });
-    input.style.display = 'none';
-}
-cerrarRadio.addEventListener('click', handleCerrarClick);
-// Agregar el evento de carga del contenido DOM
-document.addEventListener('DOMContentLoaded', () => {
-    // Llamar a la función inicialmente
-    handleResize();
-
-    // Agregar el evento de cambio a los radios
-    radios.forEach((radio) => {
-        radio.addEventListener('change', handleRadioChange);
-    });
-
-    // Agregar el evento de clic al botón "Cerrar"
+document.addEventListener("DOMContentLoaded", function () {
+  const inputRadiosHtml = document.querySelectorAll('input[type="radio"]');
+  const contenedorInputHtml = document.getElementById("input");
+  const cerrarInputHtml = document.getElementById("cerrar");
+  /* const boxHtml = document.querySelectorAll('box') */
+  let controlDisplay = false;
+  let pantallaWidth = 0;
+/*   servicioDisplay(); */
+  cerrarInputMobileRedimencionado();
+  cerrarDisplay()
+  function cerrarInputMobileRedimencionado() {
+    pantallaWidth = window.innerWidth;
     
-});
+    if (controlDisplay === false) {
+      controlDisplay =
+        pantallaWidth <= 1050
+          ? contenedorInputDisplayNone()
+          : contenedorInputDisplayFlex();
+      /* console.log("se ejecuta unva vez: se cierra input"); */
+      servicioDisplay();
+      console.log(pantallaWidth <= 1050);
+      console.log(controlDisplay);
+    } else {
+      /* console.log("se ejecuta unva vez: se abre input"); */
+      
+      controlDisplay =
+        pantallaWidth >= 1051
+          ? contenedorInputDisplayFlex()
+          : console.log("No es mayor");
+      console.log(controlDisplay);
+    }
+  }
 
-// Agregar el evento de cambio de tamaño de ventana
-window.addEventListener('resize', handleResize);
+  function contenedorInputDisplayNone() {
+    console.log("Es menor que 1050 pixeles")
+    contenedorInputHtml.style.display = "none";
+    return true;
+  }
+  function contenedorInputDisplayFlex() {
+    contenedorInputHtml.style.display = "flex";
+    /* controlDisplay = false */
+    console.log("aqui debe convertirse a false: ", controlDisplay);
+    return false;
+  }
+
+  function debounce(func, delay) {
+    let timer;
+    return function () {
+      clearTimeout(timer);
+      timer = setTimeout(func, delay);
+    };
+  }
+  
+
+  const debounceResize = debounce(cerrarInputMobileRedimencionado, 100);
+  function servicioDisplay() {
+    inputRadiosHtml.forEach(function (currentValue, index, array) {
+      currentValue.addEventListener("click", function (e) {
+        contenedorInputHtml.style.display = "flex";
+      });
+    });
+  }
+
+  function cerrarDisplay() { 
+    cerrarInputHtml.addEventListener('click',function(){
+        contenedorInputHtml.style.display = "none";
+    })
+  }
+
+  window.addEventListener("resize", debounceResize);
+});

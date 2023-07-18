@@ -214,6 +214,7 @@
     
     display: none;
 }
+
 @media screen and (max-width:1050px) {
     
     .servicios{
@@ -257,6 +258,7 @@
         color: white;
         cursor: pointer;
     }
+
     .servicios_informacion{
         flex-direction: column;
     }
@@ -268,7 +270,7 @@
     }
  */
     #input{
-        display: block;
+        /* display: block; */
         animation: shows_input .5s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
     }
     
@@ -284,7 +286,15 @@
             opacity: 0;
         }
     }
-    
+}
+@media screen and (max-width:414px) {
+    #input{
+        width: 100%;
+        margin-top: 5rem;
+    }
+    .box{
+        padding: 1rem;
+    }
 }
 /* MOSTRAR DESCRIPCION */
 /* #serv-1:checked ~ #servicio_toogle .servicio1 .descripcion,
@@ -302,9 +312,9 @@
     color: var(--text-black);
 
 } */
-#cerrar:checked ~ #input{
+/* #cerrar:checked ~ #input{
     display: none;
-}
+} */
 
 
 
