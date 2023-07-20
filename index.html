@@ -18,19 +18,30 @@
     <title>Areq Estudio</title>
 </head>
 
-<body>
+<body id="page">
+    <div id="mostrarProyecto" class="mostrar_imagen_proyecto">
+        <!-- <div class="botones">
+            <span id="imagen_antes" class="btn_antes">Antes</span>
+            <span id="imagen_despues" class="btn_ahora">Despues</span>
+            <span id="cerrar" class="btn_cerrar">Cerrar</span>
+        </div>
+        <div class="contenedor_imagenes">
+            <img class="imagen_escritorio" src="img/proyectos/planoArquitectonico_1_antes.jpg" alt="">
+            <img class="imagen_escritorio" src="img/proyectos/planoArquitectonico_2_despues.jpg" alt="">
+        </div> -->
+    </div>
     <header class="header__container">
         <a href="#menu_principal">
             <img width="197" height="84" class="header_logo" src="./logo/logo-bg-ladrillo.png"
-            alt="logo de la empresa Areq Estudio">
+                alt="logo de la empresa Areq Estudio">
         </a>
-            <nav class="nav__container">
-                <ul class="nav__menu">
-                    <li class="nav__item"><a class="nav__links" href="#servicios">Servicios</a></li>
-                    <li class="nav__item"><a class="nav__links" href="#proyectos">Proyectos</a></li>
-                    <li class="nav__item"><a class="nav__links" href="#bocetos">Bocetos</a></li>
-                </ul>
-            </nav>
+        <nav class="nav__container">
+            <ul class="nav__menu">
+                <li class="nav__item"><a class="nav__links" href="#servicios">Servicios</a></li>
+                <li class="nav__item"><a class="nav__links" href="#proyectos">Proyectos</a></li>
+                <li class="nav__item"><a class="nav__links" href="#bocetos">Bocetos</a></li>
+            </ul>
+        </nav>
     </header>
     <nav class="nav__container_mobile">
         <ul class="nav__menu">
@@ -90,10 +101,6 @@
         <input class="btn__radio" type="radio" name="slider" id="serv-11">
         <input class="btn__radio" type="radio" name="slider" id="serv-12">
         <input class="btn__radio" type="radio" name="slider" id="serv-13">
-        <!-- radio button para cerrar -->
-        <!-- <input class="btn__radio" type="radio" name="slider" id="cerrar"> -->
-        <!-- abrir #input cuando se pase a celular -->    
-        <!-- <span id="menu" class="menu">&#8801</span> -->
         <div id="servicio_toogle" class="servicios__listas_img">
             <div class="servicios__lista">
                 <p class="servicios__titulo"> <span>SERV</span>ICIOS</p>
@@ -158,7 +165,6 @@
                 <div id="caja2" class="cajas">
                     <div class="cajas__card">
                         <p class="caja__titulo">Independizacion reglamento interno</p>
-                        
                         <p class="caja__descripción">
                             Esta sujeta a la declarar la construccion existente o nuevo y establecer las unidades
                             inmobilarioa por el uso que tenga, esta permite a delimitira los espacios correspondiente de
@@ -173,7 +179,7 @@
                 <div id="caja3" class="cajas">
                     <div class="cajas__card">
                         <p class="caja__titulo">Búsqueda Catastral</p>
-                        
+
                         <p class="caja__descripción">
                             Inforamcion registradal de SUNARP que permite recopilaras
                             inscripciones, titularidad del inmueble. Esta representa
@@ -202,13 +208,13 @@
                     <div class="cajas__card">
                         <p class="caja__titulo">Subdivison de Lote</p>
                         <p class="caja__descripción">
-                            Dado el principio de vivienda inviolable por el codigo 
-                            civil. el titular podra solicitar la subdivision de su 
-                            predio ya se por construccion fisica existente o por ser 
-                            de terreno sin construccion. la subdivision procede con 
-                            el fin de los beneficios de los administrados, al vender, 
-                            donar, etc. esta permitida subdividir y declarar de fabrica 
-                            en sunarp si los documenntos y los autovalos sustente la 
+                            Dado el principio de vivienda inviolable por el codigo
+                            civil. el titular podra solicitar la subdivision de su
+                            predio ya se por construccion fisica existente o por ser
+                            de terreno sin construccion. la subdivision procede con
+                            el fin de los beneficios de los administrados, al vender,
+                            donar, etc. esta permitida subdividir y declarar de fabrica
+                            en sunarp si los documenntos y los autovalos sustente la
                             antiguiedad del bien.
                         </p>
                     </div>
@@ -219,8 +225,9 @@
                     <div class="cajas__card">
                         <p class="caja__titulo">Sucesión Intestada</p>
                         <p class="caja__descripción">
-                            Establecer los nuevos herederos de un inmueble despues del fallecimiento 
-                            del titular, permite inscribir el apto via notarial complementando los documentos de vinculo familiar y de arbol geonologico
+                            Establecer los nuevos herederos de un inmueble despues del fallecimiento
+                            del titular, permite inscribir el apto via notarial complementando los documentos de vinculo
+                            familiar y de arbol geonologico
                         </p>
                     </div>
                 </div>
@@ -230,9 +237,9 @@
                     <div class="cajas__card">
                         <p class="caja__titulo">Division y Partición / Copropietarios</p>
                         <p class="caja__descripción">
-                            Establecer los nuevos herederos de un inmueble despues del 
-                            fallecimiento del titular, permite inscribir el apto via 
-                            notarial complementando los documentos de vinculo familiar 
+                            Establecer los nuevos herederos de un inmueble despues del
+                            fallecimiento del titular, permite inscribir el apto via
+                            notarial complementando los documentos de vinculo familiar
                             y de arbol geonologico.
                         </p>
                     </div>
@@ -243,7 +250,7 @@
                     <div class="cajas__card">
                         <p class="caja__titulo">Tasación De Inmuebles</p>
                         <p class="caja__descripción">
-                            Valorizacion comercial de una propiedad por el valor de 
+                            Valorizacion comercial de una propiedad por el valor de
                             construcción segun su antiguedad y valor de terreno.
                         </p>
                     </div>
@@ -254,9 +261,9 @@
                     <div class="cajas__card">
                         <p class="caja__titulo">Título Archivado / Antecedente</p>
                         <p class="caja__descripción">
-                            Lectura del antecedente registral de un inmueble que 
-                            permita la modificación registral con lo actual para 
-                            fines del sanemiento fisico legal de predios urbanos 
+                            Lectura del antecedente registral de un inmueble que
+                            permita la modificación registral con lo actual para
+                            fines del sanemiento fisico legal de predios urbanos
                             o rurales.
                         </p>
                     </div>
@@ -283,103 +290,20 @@
             </div>
         </div>
     </section>
-
     <section id="proyectos" class="proyectos__container">
-
         <div class="proyectos__titulo">
             <p class="proyectos__parrafo ">PROYECTOS</p>
             <p class="proyectos__parrafo pt__font-size pt__color">ARQUITECTONICOS
         </div>
-        <div class="cards__container">
-            <div class="cards__proyectos">
-                <p class="cards__lugar">Villa Maria del Triunfo</p>
-                <div id="villa_maria_del_triunfo" class="cards_fondo_imagen">
-                    <div class="cards_container_imagen">
-                        <img id="villa_maria_antes" class="cards__imagen villaMariaDelTriunfo"
-                            src="./img/proyectos/planoArquitectonico_1_antes.jpg"
-                            alt="proyecto Arquitectonico Villa Maria Del Triunfo">
-                        <img id="villa_maria_ahora" class="cards__imagen s"
-                            src="./img/proyectos/planoArquitectonico_1_despues.jpeg"
-                            alt="proyecto Arquitectonico Villa Maria Del Triunfo">
-                    </div>
-                </div>
-                <div class="cards__informacion">
-                    <p class="cards__fecha">Agosto del 2022</p>
-                    <p class="cards__area">Area 73.00m2</p>
-                    <p class="cards__Antecedente"><span>Antecendete registrarl.</span>Vivienda sin
-                        regularizacion pero con vision al saneamiento fisico legal, en la que el proyecto se
-                        justifica, en buena fe. </p>
-                </div>
-            </div>
-            <div class="cards__proyectos">
-                <p class="cards__lugar">Villa Maria del Triunfo</p>
-                <div id="lugar_2" class="cards_fondo_imagen">
-                    <div class="cards_container_imagen">
-                        <img id="lugar_antes2" class="cards__imagen"
-                            src="./img/proyectos/planoArquitectonico_1_antes.jpg"
-                            alt="proyecto Arquitectonico Villa Maria Del Triungo">
-                        <img id="lugar_ahora2" class="cards__imagen"
-                            src="./img/proyectos/planoArquitectonico_2_despues.jpg"
-                            alt="proyecto Arquitectonico Villa Maria Del Triungo">
-                    </div>
-                </div>
-                <div class="cards__informacion">
-                    <p class="cards__fecha">Agosto del 2022</p>
-                    <p class="cards__area">Area 73.00m2</p>
-                    <p class="cards__Antecedente"><span>Antecendete registrarl.</span>Vivienda sin
-                        regularizacion pero con vision al saneamiento fisico legal, en la que el proyecto se
-                        justifica, en buena fe. </p>
-                </div>
-            </div>
-            <div class="cards__proyectos">
-                <p class="cards__lugar">Villa Maria del Triunfo</p>
-                <div id="lugar_3" class="cards_fondo_imagen">
-                    <div class="cards_container_imagen">
-                        <img id="lugar_antes3" class="cards__imagen" src="./img/proyectos/planoArquitectonico2.jpg"
-                            alt="proyecto Arquitectonico Villa Maria Del Triungo">
-                        <img id="lugar_ahora3" class="cards__imagen" src="./img/proyectos/planoArquitectonico2.jpg"
-                            alt="proyecto Arquitectonico Villa Maria Del Triungo">
-                    </div>
-                </div>
-                <div class="cards__informacion">
-                    <p class="cards__fecha">Agosto del 2022</p>
-                    <p class="cards__area">Area 73.00m2</p>
-                    <p class="cards__Antecedente"><span>Antecendete registrarl.</span>Vivienda sin
-                        regularizacion pero con vision al saneamiento fisico legal, en la que el proyecto se
-                        justifica, en buena fe. </p>
-                </div>
-            </div>
-            <div class="cards__proyectos">
-                <p class="cards__lugar">Villa Maria del Triunfo</p>
-                <div id="lugar_4" class="cards_fondo_imagen">
-                    <div class="cards_container_imagen">
-                        <img id="lugar_antes4" id="villa_maria_antes" class="cards__imagen"
-                            src="./img/proyectos/planoArquitectonico2.jpg"
-                            alt="proyecto Arquitectonico Villa Maria Del Triungo">
-                        <img id="lugar_ahora4" id="villa_maria_ahora" class="cards__imagen"
-                            src="./img/proyectos/planoArquitectonico2.jpg"
-                            alt="proyecto Arquitectonico Villa Maria Del Triungo">
-                    </div>
-                </div>
-                <div class="cards__informacion">
-                    <p class="cards__fecha">Agosto del 2022</p>
-                    <p class="cards__area">Area 73.00m2</p>
-                    <p class="cards__Antecedente"><span>Antecendete registrarl.</span>Vivienda sin
-                        regularizacion pero con vision al saneamiento fisico legal, en la que el proyecto se
-                        justifica, en buena fe. </p>
-                </div>
-            </div>
+        <div id="cartas" class="cards__container">
         </div>
     </section>
-
     <section id="bocetos" class="bocetos__container">
         <div class="cube">
             <p class="boceto__titulo">BOCE <span>TOS</span></p>
             <div class="container_position_cubes">
-                
                 <div class="cube_item">
                     <div class="front">
-
                         <img src="img/b_1.png" alt="">
                     </div>
                     <div class="back">
@@ -391,16 +315,12 @@
                     <div class="right">
                         <img src="img/b_1.png" alt="">
                     </div>
-                    <div class="top">
-
-                    </div>
+                    <div class="top"></div>
                     <div class="bottom"></div>
                 </div>
                 <div class="cube_item cube_item_animacion_inverso">
                     <div class="front">
-
                         <img src="img/b_2.png" alt="">
-
                     </div>
                     <div class="back"><img src="img/b_2.png" alt=""></div>
                     <div class="left"><img src="img/b_2.png" alt=""></div>
@@ -408,40 +328,17 @@
                     <div class="top"></div>
                     <div class="bottom"></div>
                 </div>
-
-
             </div>
-
         </div>
-
-        <!-- <div class="boceto__indicador">
-                <div id="circulo_uno" class="boceto__circulo boceto_uno"></div>
-                <div id="circulo_dos" class="boceto__circulo boceto_dos"></div>
-                <div id="circulo_tres" class="boceto__circulo boceto_tres"></div>
-                <div id="circulo_cuatro" class="boceto__circulo boceto_cuatro"></div>
-                <div id="circulo_cinco" class="boceto__circulo boceto_cinco"></div>
-                <div id="circulo_seis" class="boceto__circulo boceto_seis"></div>
-                <div id="circulo_siete" class="boceto__circulo boceto_siete"></div>
-                <div id="circulo_ocho" class="boceto__circulo boceto_ocho"></div>
-            </div> -->
-
     </section>
-
     <footer class="footer">
         <p class="footer_copy">©2022 AREQ ESTUDIO PERÚ<br>Todos los derechos reservados</p>
         <p class="footer_copy">Copyright © 2022 | Aviso legal</p>
     </footer>
-
-    <!-- <script src="./script/servicios_nav_mobile.js"></script>
-    <script src="./script/redirecionar.js" type="module"></script>
-    <script src="./script/agrandar_box_servicio.js"></script>
-    <script src="./script/servicios_imagen_show_cerrar.js"></script>
-    <script src="./script/servicio_zoom.js"></script>
-    <script src="./script/proyectos_imagen_show.js"></script> -->
-    <!-- <script>
-        wheelzoom(document.querySelector('img.zoom'));
-    </script> -->
     <script src="js/offRadioButton.js"></script>
+    <script type="module" src="js/proyectos_obj.js"></script>
+    <script type="module" src="js/proyectos_view.js"></script>
+    <script type="module" src="js/agrandar_imagen_proyecto.js"></script>
 </body>
 
 </html>

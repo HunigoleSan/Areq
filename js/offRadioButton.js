@@ -32,14 +32,14 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function contenedorInputDisplayNone() {
-    console.log("Es menor que 1050 pixeles")
+    /* console.log("Es menor que 1050 pixeles") */
     contenedorInputHtml.style.display = "none";
     return true;
   }
   function contenedorInputDisplayFlex() {
     contenedorInputHtml.style.display = "flex";
     /* controlDisplay = false */
-    console.log("aqui debe convertirse a false: ", controlDisplay);
+    /* console.log("aqui debe convertirse a false: ", controlDisplay); */
     return false;
   }
 
