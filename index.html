@@ -1,53 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/servicios_input.css">
     <link rel="stylesheet" href="./css/servicios_img.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>Areq Estudio</title>
 </head>
 
 <body id="page">
     <div id="mostrarProyecto" class="mostrar_imagen_proyecto">
-        <!-- <div class="botones">
-            <span id="imagen_antes" class="btn_antes">Antes</span>
-            <span id="imagen_despues" class="btn_ahora">Despues</span>
-            <span id="cerrar" class="btn_cerrar">Cerrar</span>
-        </div>
-        <div class="contenedor_imagenes">
-            <img class="imagen_escritorio" src="img/proyectos/planoArquitectonico_1_antes.jpg" alt="">
-            <img class="imagen_escritorio" src="img/proyectos/planoArquitectonico_2_despues.jpg" alt="">
-        </div> -->
     </div>
     <header class="header__container">
-        <a href="#menu_principal">
-            <img width="197" height="84" class="header_logo" src="./logo/logo-bg-ladrillo.png"
-                alt="logo de la empresa Areq Estudio">
-        </a>
+        <a href="#menu_principal"><img width="197" height="84" class="header_logo" src="./logo/logo-bg-ladrillo.png" alt="logo de la empresa Areq Estudio"></a>
         <nav class="nav__container">
             <ul class="nav__menu">
-                <li class="nav__item"><a class="nav__links" href="#servicios">Servicios</a></li>
-                <li class="nav__item"><a class="nav__links" href="#proyectos">Proyectos</a></li>
-                <li class="nav__item"><a class="nav__links" href="#bocetos">Bocetos</a></li>
+                <li class="nav__item"><a class="principal__links" href="#servicios">Servicios</a></li>
+                <li class="nav__item"><a class="principal__links" href="#proyectos">Proyectos</a></li>
+                <li class="nav__item"><a class="principal__links" href="#bocetos">Bocetos</a></li>
             </ul>
         </nav>
     </header>
     <nav class="nav__container_mobile">
         <ul class="nav__menu">
-            <li class="nav__item"><a class="nav__links" href="#servicios">Servicios</a></li>
-            <li class="nav__item"><a class="nav__links" href="#proyectos">Proyectos</a></li>
-            <li class="nav__item"><a class="nav__links" href="#bocetos">Bocetos</a></li>
+            <li class="nav__item"><a class="principal__links" href="#servicios">Servicios</a></li>
+            <li class="nav__item"><a class="principal__links" href="#proyectos">Proyectos</a></li>
+            <li class="nav__item"><a class="principal__links" href="#bocetos">Bocetos</a></li>
         </ul>
     </nav>
     <section id="menu_principal" class="principal">
@@ -58,18 +45,15 @@
         </div>
         <div class="principal__video-cita-menu">
             <video class="principal__video" autoplay muted loop>
-                <source class="source" src="./video/dibujando.mp4" type="video/mp4">
+                <source src="./video/dibujando.mp4" type="video/mp4">
                 <source src="./video/dibujando.ogg" type="video/ogg">
                 Tu Navegador no es compatible con videos HTML5
             </video>
             <div class="principal__cita_menu">
                 <div class="principal__cita">
-                    <p class="principal__cita">
-                        Toda forma pictórica se inicia con un punto que se pone en movimiento
-                    </p>
+                    <p>Toda forma pictórica se inicia con un punto que se pone en movimiento</p>
                     <p class="autor_cita">Paul Klee</p>
                 </div>
-
                 <div class="principal__menu">
                     <ul class="principal__ul">
                         <li class="principal__li"><a class="principal__links" href="#servicios">Servicios</a></li>
@@ -85,209 +69,22 @@
             Tu Navegador no es compatible con videos HTML5
         </video>
     </section>
-
     <section id="servicios" class="servicios">
-
-        <input class="btn__radio" type="radio" name="slider" id="serv-1" checked>
-        <input class="btn__radio" type="radio" name="slider" id="serv-2">
-        <input class="btn__radio" type="radio" name="slider" id="serv-3">
-        <input class="btn__radio" type="radio" name="slider" id="serv-4">
-        <input class="btn__radio" type="radio" name="slider" id="serv-5">
-        <input class="btn__radio" type="radio" name="slider" id="serv-6">
-        <input class="btn__radio" type="radio" name="slider" id="serv-7">
-        <input class="btn__radio" type="radio" name="slider" id="serv-8">
-        <input class="btn__radio" type="radio" name="slider" id="serv-9">
-        <input class="btn__radio" type="radio" name="slider" id="serv-10">
-        <input class="btn__radio" type="radio" name="slider" id="serv-11">
-        <input class="btn__radio" type="radio" name="slider" id="serv-12">
-        <input class="btn__radio" type="radio" name="slider" id="serv-13">
+        <input class="btn__radio" type="radio" name="slider" id="serv-1">
         <div id="servicio_toogle" class="servicios__listas_img">
             <div class="servicios__lista">
-                <p class="servicios__titulo"> <span>SERV</span>ICIOS</p>
+                <p class="servicios__titulo"><span>SERV</span>ICIOS</p>
                 <div id="esqueleto_label" class="servicios__ul">
-                    <div class="content_label servicio1">
-                        <label class="servicios__li" id="item-1" for="serv-1">Declaratoria de Fábrica</label>
-                    </div>
-                    <div class="content_label servicio2">
-                        <label class="servicios__li" id="item-2" for="serv-2">Independización / Reglamento
-                            Interno</label>
-                    </div>
-                    <div class="content_label servicio3">
-                        <label class="servicios__li" id="item-3" for="serv-3">Búsqueda Catastral</label>
-                    </div>
-                    <div class="content_label servicio4">
-                        <label class="servicios__li" id="item-4" for="serv-4">Visación - Prescripcion Adquisitiva de
-                            Dominio</label>
-                    </div>
-                    <div class="content_label servicio5">
-                        <label class="servicios__li" id="item-5" for="serv-5">Subdivision de Lote</label>
-                    </div>
-                    <div class="content_label servicio6">
-                        <label class="servicios__li" id="item-6" for="serv-6">Sucesión Intestada</label>
-                    </div>
-                    <div class="content_label servicio7">
-                        <label class="servicios__li" id="item-7" for="serv-7">Division y Partición /
-                            Copropietarios</label>
-                    </div>
-                    <div class="content_label servicio8">
-                        <label class="servicios__li" id="item-8" for="serv-8">Tasación De Inmuebles</label>
-                    </div>
-                    <div class="content_label servicio9">
-                        <label class="servicios__li" id="item-9" for="serv-9">Título Archivado/Antecedente</label>
-                    </div>
                 </div>
             </div>
         </div>
-        <div id="input" class="servicios_informacion comuns__modifique celular">
+        <div id="input" class="servicios_informacion celular">
             <div id="cerrar" class="cerrar_input">Cerrar</div>
-            <div class="box box1">
-                <div id="caja1" class="cajas">
-                    <div id="caja_prueba" class="cajas__card">
-                        <p class="caja__titulo">Declaratoria de Fabrica</p><a class="caja__link ocultar__link"
-                            href="#">Ver mas</a>
-                        <p class="caja__descripción">
-                            Edificacion existente que constata una construccion, ya sea por antiguedad o por
-                            construccion nueva.
-                            Dado la autoconstruccion sin permisos municipales puede ser regularizado en los registros
-                            publicos
-                            construcciones hasta el año 2016 bajos los principiopios de la ley 27157 y la ley 30830. Por
-                            lo que,
-                            las construcciones posteriores al 2016 tiene relacion con el gobierno local por la ley
-                            29090. Por lo
-                            tanto. el acto de declarar la construccion existente permite definir la privatizacion de un
-                            familia
-                            por el uso que tenga respetando la titularidad el bien
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="box box2">
-                <div id="caja2" class="cajas">
-                    <div class="cajas__card">
-                        <p class="caja__titulo">Independizacion reglamento interno</p>
-                        <p class="caja__descripción">
-                            Esta sujeta a la declarar la construccion existente o nuevo y establecer las unidades
-                            inmobilarioa por el uso que tenga, esta permite a delimitira los espacios correspondiente de
-                            los copriopietarios. Po rlo cual esta sujeta a al reglamento interno, estableciendo los
-                            derechos de areas comunos en la cual todo se comprometen a respetar y por supuesto los
-                            derechos como copropietarios en la edificion.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="box box3">
-                <div id="caja3" class="cajas">
-                    <div class="cajas__card">
-                        <p class="caja__titulo">Búsqueda Catastral</p>
-
-                        <p class="caja__descripción">
-                            Inforamcion registradal de SUNARP que permite recopilaras
-                            inscripciones, titularidad del inmueble. Esta representa
-                            en la georeferenciacion del preedio para lo salicitud en
-                            registros publicos.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="box box4">
-                <div class="cajas">
-                    <div class="cajas__card">
-                        <p class="caja__titulo">Visacion Prescriqsion adquisitiva de Dominio</p>
-                        <p class="caja__descripción">
-                            Evaluación técnica de ocupa el posesionario del
-                            inmueble lo cual se realiza los planos
-                            georeferenciados para la administracion del TUPA
-                            municipal
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="box box5">
-                <div class="cajas">
-                    <div class="cajas__card">
-                        <p class="caja__titulo">Subdivison de Lote</p>
-                        <p class="caja__descripción">
-                            Dado el principio de vivienda inviolable por el codigo
-                            civil. el titular podra solicitar la subdivision de su
-                            predio ya se por construccion fisica existente o por ser
-                            de terreno sin construccion. la subdivision procede con
-                            el fin de los beneficios de los administrados, al vender,
-                            donar, etc. esta permitida subdividir y declarar de fabrica
-                            en sunarp si los documenntos y los autovalos sustente la
-                            antiguiedad del bien.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="box box6">
-                <div class="cajas">
-                    <div class="cajas__card">
-                        <p class="caja__titulo">Sucesión Intestada</p>
-                        <p class="caja__descripción">
-                            Establecer los nuevos herederos de un inmueble despues del fallecimiento
-                            del titular, permite inscribir el apto via notarial complementando los documentos de vinculo
-                            familiar y de arbol geonologico
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="box box7">
-                <div class="cajas">
-                    <div class="cajas__card">
-                        <p class="caja__titulo">Division y Partición / Copropietarios</p>
-                        <p class="caja__descripción">
-                            Establecer los nuevos herederos de un inmueble despues del
-                            fallecimiento del titular, permite inscribir el apto via
-                            notarial complementando los documentos de vinculo familiar
-                            y de arbol geonologico.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="box box8">
-                <div class="cajas">
-                    <div class="cajas__card">
-                        <p class="caja__titulo">Tasación De Inmuebles</p>
-                        <p class="caja__descripción">
-                            Valorizacion comercial de una propiedad por el valor de
-                            construcción segun su antiguedad y valor de terreno.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="box box9">
-                <div class="cajas">
-                    <div class="cajas__card">
-                        <p class="caja__titulo">Título Archivado / Antecedente</p>
-                        <p class="caja__descripción">
-                            Lectura del antecedente registral de un inmueble que
-                            permita la modificación registral con lo actual para
-                            fines del sanemiento fisico legal de predios urbanos
-                            o rurales.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="box box10">
-                <div class="cajas">SERVICIO 2</div>
-                <div class="cajas">SERVICIO 2</div>
-                <div class="cajas">SERVICIO 2</div>
-                <div class="cajas">SERVICIO 2</div>
-                <div class="cajas">SERVICIO 2</div>
-                <div class="cajas">SERVICIO 2</div>
-            </div>
         </div>
         <div class="servicios__img">
-            <div class="servicios_imagenes">
-                <img class="servicios__imagen imagen_uno" width="350px" height="202px" src="./img/plano.jpg" alt="">
-            </div>
-            <div class="servicios_imagenes">
-                <img class="servicios__imagen imagen_dos" width="350px" height="202px" src="./img/realizado.jpg" alt="">
-            </div>
-            <div class="servicios_imagenes">
-                <img class="servicios__imagen imagen_tres" width="350px" height="202px" src="./img/plano0.jpg" alt="">
-            </div>
+            <div class="servicios_imagenes"><img class="servicios__imagen imagen_uno" width="350px" height="202px" src="./img/plano.jpg" alt=""></div>
+            <div class="servicios_imagenes"><img class="servicios__imagen imagen_dos" width="350px" height="202px" src="./img/realizado.jpg" alt=""></div>
+            <div class="servicios_imagenes"><img class="servicios__imagen imagen_tres" width="350px" height="202px" src="./img/plano0.jpg" alt=""></div>
         </div>
     </section>
     <section id="proyectos" class="proyectos__container">
@@ -295,36 +92,27 @@
             <p class="proyectos__parrafo ">PROYECTOS</p>
             <p class="proyectos__parrafo pt__font-size pt__color">ARQUITECTONICOS
         </div>
-        <div id="cartas" class="cards__container">
-        </div>
+        <div id="cartas" class="cards__container"></div>
     </section>
     <section id="bocetos" class="bocetos__container">
+        
         <div class="cube">
             <p class="boceto__titulo">BOCE <span>TOS</span></p>
             <div class="container_position_cubes">
+                
                 <div class="cube_item">
-                    <div class="front">
-                        <img src="img/b_1.png" alt="">
-                    </div>
-                    <div class="back">
-                        <img src="img/b_1.png" alt="">
-                    </div>
-                    <div class="left">
-                        <img src="img/b_1.png" alt="">
-                    </div>
-                    <div class="right">
-                        <img src="img/b_1.png" alt="">
-                    </div>
+                    <div class="front"><img src="img/boceto_1.png" alt=""></div>
+                    <div class="back"><img src="img/boceto_2.png" alt=""></div>
+                    <div class="left"><img src="img/boceto_3.png" alt=""></div>
+                    <div class="right"><img src="img/boceto_4.png" alt=""> </div>
                     <div class="top"></div>
                     <div class="bottom"></div>
                 </div>
                 <div class="cube_item cube_item_animacion_inverso">
-                    <div class="front">
-                        <img src="img/b_2.png" alt="">
-                    </div>
-                    <div class="back"><img src="img/b_2.png" alt=""></div>
-                    <div class="left"><img src="img/b_2.png" alt=""></div>
-                    <div class="right"><img src="img/b_2.png" alt=""></div>
+                    <div class="front"><img src="img/boceto_5.png" alt=""></div>
+                    <div class="back"><img src="img/boceto_6.png" alt=""></div>
+                    <div class="left"><img src="img/boceto_7.png" alt=""></div>
+                    <div class="right"><img src="img/boceto_8.png" alt=""></div>
                     <div class="top"></div>
                     <div class="bottom"></div>
                 </div>
@@ -332,12 +120,18 @@
         </div>
     </section>
     <footer class="footer">
-        <p class="footer_copy">©2022 AREQ ESTUDIO PERÚ<br>Todos los derechos reservados</p>
-        <p class="footer_copy">Copyright © 2022 | Aviso legal</p>
+        <div class="contacto">
+            <a href="#"><img src="img/icon/whatsapp.png" alt=""> Contáctame</a>
+        </div>
+        <div class="contenedor_copy">
+            <p class="footer_copy">©2022 AREQ ESTUDIO PERÚ <span>Todos los derechos reservados</span></p>
+        </div>
     </footer>
-    <script src="js/offRadioButton.js"></script>
+    <script src="js/cerrarInputServicio.js"></script>
     <script type="module" src="js/proyectos_obj.js"></script>
+    <script type="module" src="js/servicios_obj.js"></script>
     <script type="module" src="js/proyectos_view.js"></script>
+    <script type="module" src="js/servicios_view.js"></script>
     <script type="module" src="js/agrandar_imagen_proyecto.js"></script>
 </body>
 
